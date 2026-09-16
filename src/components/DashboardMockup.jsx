@@ -2,7 +2,7 @@ import Icon from './Icons.jsx'
 
 export default function DashboardMockup() {
   return (
-    <div className="dashboard-frame" aria-label="FlowPilot dashboard preview">
+    <div className="dashboard-frame" aria-label="Illustrative FlowPilot dashboard preview">
       <div className="dashboard-window-bar">
         <div className="window-dots"><span /><span /><span /></div>
         <span className="window-title">app.flowpilot.ai</span>
@@ -20,7 +20,7 @@ export default function DashboardMockup() {
         <div className="dashboard-main">
           <div className="dashboard-heading">
             <div><span className="mockup-kicker">MONDAY, SEPTEMBER 16</span><h3>Good morning, Alex</h3></div>
-            <button type="button" aria-label="More options"><Icon name="more" size={18} /></button>
+            <span className="dashboard-control" aria-hidden="true"><Icon name="more" size={18} /></span>
           </div>
           <div className="stat-row">
             <div className="mini-stat"><span className="stat-icon purple"><Icon name="sparkle" size={16} /></span><span><strong>12</strong><small>Generated today</small></span></div>

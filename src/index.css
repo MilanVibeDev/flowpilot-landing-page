@@ -124,6 +124,11 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .button-ghost { color: var(--text-soft); background: transparent; }
 
+.button.is-static {
+  cursor: default;
+  pointer-events: none;
+}
+
 .button-small { min-height: 42px; padding: 0 17px; font-size: 0.86rem; }
 
 :where(a, button):focus-visible { outline: 3px solid rgb(99 102 241 / 38%); outline-offset: 3px; }
@@ -163,7 +168,38 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .menu-toggle { display: none; width: 42px; height: 42px; place-items: center; border: 1px solid var(--border); border-radius: 10px; background: #fff; }
 
-.hero-section { position: relative; padding: 154px 0 92px; background: linear-gradient(180deg, #fbfbff 0%, #fff 82%); overflow: hidden; }
+.concept-banner {
+  margin-top: 72px;
+  padding: 12px 0;
+  color: #e2e8f0;
+  background: #111827;
+}
+
+.concept-banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.concept-banner strong {
+  color: #fff;
+  font-size: 0.76rem;
+}
+
+.concept-banner strong::before {
+  margin-right: 7px;
+  color: #a5b4fc;
+  content: '✦';
+}
+
+.concept-banner span {
+  color: #94a3b8;
+  font-size: 0.7rem;
+}
+
+.hero-section { position: relative; padding: 90px 0 92px; background: linear-gradient(180deg, #fbfbff 0%, #fff 82%); overflow: hidden; }
 
 .hero-glow { position: absolute; top: 30px; right: -180px; width: 700px; height: 700px; border-radius: 50%; background: radial-gradient(circle, rgb(99 102 241 / 11%) 0%, rgb(99 102 241 / 0%) 69%); pointer-events: none; }
 
@@ -278,7 +314,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .mockup-kicker { color: #a0a8b5; font-size: 0.44rem; letter-spacing: 0.12em; }
 
-.dashboard-heading button { width: 27px; height: 27px; display: grid; place-items: center; border: 1px solid var(--border); border-radius: 7px; background: #fff; }
+.dashboard-control { width: 27px; height: 27px; display: grid; place-items: center; border: 1px solid var(--border); border-radius: 7px; background: #fff; }
 
 .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 21px; }
 
@@ -363,6 +399,14 @@ ul { margin: 0; padding: 0; list-style: none; }
 .company { display: flex; align-items: center; gap: 7px; font-size: 0.92rem; font-weight: 750; letter-spacing: -0.02em; }
 
 .company i { color: #99a2b1; font-size: 0.9rem; font-style: normal; }
+
+.section-note {
+  display: block;
+  margin-top: 20px;
+  color: #94a3b8;
+  font-size: 0.62rem;
+  text-align: center;
+}
 
 .company-1 { font-family: Georgia, serif; }
 
@@ -573,7 +617,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .extract-task small { display: flex; align-items: center; gap: 4px; color: #9099a8; font-size: 0.42rem; }
 
-.extract-panel button { width: 100%; height: 29px; display: flex; align-items: center; justify-content: center; gap: 5px; margin-top: 14px; color: #fff; background: var(--accent); border: 0; border-radius: 6px; font-size: 0.49rem; font-weight: 700; }
+.mockup-button { width: 100%; height: 29px; display: flex; align-items: center; justify-content: center; gap: 5px; margin-top: 14px; color: #fff; background: var(--accent); border-radius: 6px; font-size: 0.49rem; font-weight: 700; }
 
 .team-dashboard { padding: 22px; }
 
@@ -663,6 +707,25 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .metrics-section { padding: 65px 0; color: #fff; background: #111827; }
 
+.metrics-heading {
+  margin-bottom: 34px;
+  text-align: center;
+}
+
+.metrics-heading span {
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.metrics-heading p {
+  margin-top: 9px;
+  color: #94a3b8;
+  font-size: 0.7rem;
+}
+
 .metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
 
 .metric { display: flex; flex-direction: column; align-items: center; gap: 8px; border-right: 1px solid rgb(255 255 255 / 13%); text-align: center; }
@@ -678,6 +741,18 @@ ul { margin: 0; padding: 0; list-style: none; }
 .testimonial-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 
 .testimonial-card { min-height: 300px; display: flex; flex-direction: column; padding: 28px; border: 1px solid var(--border); border-radius: var(--radius-md); background: #fff; box-shadow: 0 5px 18px rgb(15 23 42 / 3%); }
+
+.sample-label {
+  width: fit-content;
+  padding: 4px 7px;
+  color: #64748b;
+  background: #f1f5f9;
+  border-radius: 5px;
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
 
 .quote-mark { height: 34px; color: var(--accent); font-family: Georgia, serif; font-size: 3rem; line-height: 1; }
 
@@ -753,6 +828,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .faq-answer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 260ms ease; }
 
+.faq-answer[hidden] { display: none; }
+
 .faq-answer > div { overflow: hidden; }
 
 .faq-answer p { padding: 0 35px 0 0; color: var(--muted); font-size: 0.8rem; line-height: 1.7; }
@@ -781,7 +858,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .footer { padding: 72px 0 28px; background: #0b1120; color: #fff; }
 
-.footer-grid { display: grid; grid-template-columns: 1.6fr repeat(3, 0.7fr); gap: 55px; padding-bottom: 55px; }
+.footer-grid { display: grid; grid-template-columns: 1.6fr repeat(2, 0.7fr); gap: 55px; padding-bottom: 55px; }
 
 .footer .logo { color: #fff; }
 
@@ -829,9 +906,9 @@ ul { margin: 0; padding: 0; list-style: none; }
 
   .nav-links a { padding: 13px 3px; border-bottom: 1px solid #edf0f4; }
 
-  .nav-actions { display: grid; grid-template-columns: 1fr 1fr; }
+  .nav-actions { display: grid; grid-template-columns: 1fr; }
 
-  .hero-section { padding-top: 130px; }
+  .hero-section { padding-top: 80px; }
 
   .hero-grid { grid-template-columns: 1fr; gap: 68px; }
 
@@ -870,6 +947,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 @media (max-width: 760px) {
   .container { width: min(100% - 32px, var(--container)); }
+
+  .concept-banner-content { flex-direction: column; gap: 3px; }
 
   .section { padding: 76px 0; }
 
@@ -927,6 +1006,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 @media (max-width: 520px) {
   .navbar { height: 66px; }
+
+  .concept-banner { margin-top: 66px; }
 
   .nav-menu { top: 66px; left: 16px; right: 16px; }
 

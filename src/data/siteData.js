@@ -84,10 +84,10 @@ export const integrations = [
 ]
 
 export const metrics = [
-  { value: '6h', label: 'saved per team every week' },
-  { value: '18K+', label: 'tasks automated weekly' },
-  { value: '94%', label: 'tasks completed on time' },
-  { value: '2.4K+', label: 'active teams' },
+  { value: '6h', label: 'sample time-saved metric' },
+  { value: '18K+', label: 'sample automation volume' },
+  { value: '94%', label: 'sample completion rate' },
+  { value: '2.4K+', label: 'sample team count' },
 ]
 
 export const testimonials = [
@@ -122,7 +122,6 @@ export const pricing = [
     price: '€0',
     description: 'For individuals exploring a smarter way to work.',
     features: ['1 workspace', 'Up to 3 users', '50 AI tasks per month'],
-    action: 'Start Free',
   },
   {
     name: 'Pro',
@@ -130,7 +129,6 @@ export const pricing = [
     suffix: '/ user / month',
     description: 'For growing teams ready to automate busywork.',
     features: ['Unlimited AI tasks', 'All integrations', 'AI meeting notes'],
-    action: 'Start Pro Trial',
     featured: true,
   },
   {
@@ -139,26 +137,56 @@ export const pricing = [
     suffix: '/ user / month',
     description: 'For organizations that need control and insight.',
     features: ['Advanced analytics', 'Custom permissions', 'Priority support'],
-    action: 'Contact Sales',
   },
 ]
 
 export const faqs = [
-  { question: 'Do I need to install anything?', answer: 'No. FlowPilot works directly in your browser.' },
+  {
+    question: 'Do I need to install anything?',
+    answer: 'No. This is a frontend concept that runs directly in the browser.',
+  },
   {
     question: 'Can FlowPilot connect with Slack?',
-    answer: 'Yes. FlowPilot can analyze conversations and convert requests into tasks.',
+    answer: 'The concept shows how a Slack connection could be presented. No live integration is implemented.',
   },
   {
     question: 'Can I edit AI-generated tasks?',
-    answer: 'Yes. Every task can be edited before or after creation.',
+    answer: 'Editable AI-generated tasks are part of the proposed product experience, not a working application feature.',
   },
-  { question: 'Is there a free plan?', answer: 'Yes. The free plan supports up to three users.' },
-  { question: 'Can I cancel anytime?', answer: 'Yes. There are no long-term contracts.' },
+  {
+    question: 'Is there a free plan?',
+    answer: 'The displayed plans are illustrative pricing concepts. No real subscription plans are offered.',
+  },
+  {
+    question: 'Can I cancel anytime?',
+    answer: 'There is no real account, payment, or subscription flow in this portfolio project.',
+  },
 ]
 
 export const footerLinks = [
-  { title: 'Product', links: ['Features', 'Integrations', 'Pricing', 'Changelog'] },
-  { title: 'Company', links: ['About', 'Blog', 'Careers', 'Contact'] },
-  { title: 'Resources', links: ['Help Center', 'Documentation', 'API', 'Community'] },
+  {
+    title: 'Explore',
+    links: [
+      { label: 'Features', href: '#features' },
+      { label: 'How it works', href: '#how-it-works' },
+      { label: 'Integrations', href: '#integrations' },
+      { label: 'Pricing concept', href: '#pricing' },
+      { label: 'FAQ', href: '#faq' },
+    ],
+  },
+  {
+    title: 'Project',
+    links: [
+      {
+        label: 'Source code',
+        href: 'https://github.com/MilanVibeDev/flowpilot-landing-page',
+        external: true,
+      },
+      {
+        label: 'Developer profile',
+        href: 'https://github.com/MilanVibeDev',
+        external: true,
+      },
+    ],
+  },
 ]

@@ -34,11 +34,10 @@ export function Hero() {
           <h1>Turn conversations into <span>action.</span> Automatically.</h1>
           <p>FlowPilot uses AI to turn messages, meeting notes, and ideas into organized tasks so your team always knows what to do next.</p>
           <div className="hero-actions">
-            <a className="button button-primary" href="#pricing">Start for free <Icon name="arrowRight" size={18} /></a>
-            <a className="button button-secondary" href="#how-it-works"><span className="play-icon"><Icon name="play" size={15} /></span> Watch demo</a>
+            <a className="button button-primary" href="#features">Explore the concept <Icon name="arrowRight" size={18} /></a>
+            <a className="button button-secondary" href="#how-it-works"><span className="play-icon"><Icon name="play" size={15} /></span> See how it works</a>
           </div>
-          <div className="microcopy"><Icon name="check" size={14} /> No credit card required <span>·</span> Free 14-day trial</div>
-          <div className="hero-rating"><div className="avatar-stack"><span>EC</span><span>DK</span><span>SM</span><span>+</span></div><div><strong>★★★★★</strong><small>4.8/5 from 2,400+ teams</small></div></div>
+          <div className="microcopy"><Icon name="check" size={14} /> Frontend-only portfolio build <span>·</span> No signup or payment flow</div>
         </div>
         <div className="hero-visual"><div className="hero-orbit orbit-one" /><div className="hero-orbit orbit-two" /><DashboardMockup /></div>
       </div>
@@ -48,8 +47,8 @@ export function Hero() {
 
 export function SocialProof() {
   return (
-    <section className="social-proof" aria-label="Customers">
-      <div className="container"><p>Used by 2,400+ productive teams</p><div className="company-row">{companies.map((company, index) => <span key={company} className={`company company-${index}`}>{index === 0 && <i>◆</i>}{index === 1 && <i>◈</i>}{index === 2 && <i>V</i>}{index === 3 && <i>☁</i>}{index === 4 && <i>✦</i>}{index === 5 && <i>●</i>}{company}</span>)}</div></div>
+    <section className="social-proof" aria-label="Fictional brand placeholders">
+      <div className="container"><p>Fictional company marks created for this concept</p><div className="company-row">{companies.map((company, index) => <span key={company} className={`company company-${index}`}>{index === 0 && <i>◆</i>}{index === 1 && <i>◈</i>}{index === 2 && <i>V</i>}{index === 3 && <i>☁</i>}{index === 4 && <i>✦</i>}{index === 5 && <i>●</i>}{company}</span>)}</div><small className="section-note">Brand names are placeholders. No client relationships are implied.</small></div>
     </section>
   )
 }
@@ -96,19 +95,19 @@ export function HowItWorks() {
 export function Integrations() {
   return (
     <section className="section integrations-section" id="integrations">
-      <div className="container integration-grid"><div className="integration-copy"><span className="eyebrow">INTEGRATIONS</span><h2>Works with the tools you already use</h2><p>Connect your team&apos;s favorite apps and let FlowPilot keep everything in sync.</p><a className="text-link" href="#pricing">View all integrations <Icon name="arrowRight" size={16} /></a></div><div className="integration-list">{integrations.map((integration) => <div className="integration-card" key={integration.name}><span style={{ color: integration.color }}><Icon name={integration.icon} size={23} /></span><strong>{integration.name}</strong><small><Icon name="check" size={13} /> Connected</small></div>)}</div></div>
+      <div className="container integration-grid"><div className="integration-copy"><span className="eyebrow">INTEGRATION CONCEPTS</span><h2>Designed around familiar team tools</h2><p>These fictional integration concepts demonstrate product positioning and interface design. No live integrations are implemented.</p><a className="text-link" href="#how-it-works">Review the concept flow <Icon name="arrowRight" size={16} /></a></div><div className="integration-list">{integrations.map((integration) => <div className="integration-card" key={integration.name}><span style={{ color: integration.color }}><Icon name={integration.icon} size={23} /></span><strong>{integration.name}</strong><small><Icon name="sparkle" size={13} /> Concept</small></div>)}</div></div>
     </section>
   )
 }
 
 export function Metrics() {
-  return <section className="metrics-section"><div className="container metrics-grid">{metrics.map((metric) => <div className="metric" key={metric.value}><strong>{metric.value}</strong><span>{metric.label}</span></div>)}</div></section>
+  return <section className="metrics-section" aria-labelledby="metrics-title"><div className="container"><div className="metrics-heading"><span id="metrics-title">Illustrative dashboard metrics</span><p>Sample data created to demonstrate a SaaS metrics interface—not measured product results.</p></div><div className="metrics-grid">{metrics.map((metric) => <div className="metric" key={metric.value}><strong>{metric.value}</strong><span>{metric.label}</span></div>)}</div></div></section>
 }
 
 export function Testimonials() {
   return (
     <section className="section testimonials-section" id="testimonials">
-      <div className="container"><SectionHeader eyebrow="CUSTOMER STORIES" title="Teams move faster with FlowPilot" description="Join thousands of teams spending less time managing work—and more time doing it." /><div className="testimonial-grid">{testimonials.map((testimonial) => <figure className="testimonial-card" key={testimonial.name}><div className="quote-mark">“</div><blockquote>{testimonial.quote}</blockquote><figcaption><span className={`testimonial-avatar ${testimonial.tone}`}>{testimonial.initials}</span><span><strong>{testimonial.name}</strong><small>{testimonial.role}</small></span></figcaption></figure>)}</div></div>
+      <div className="container"><SectionHeader eyebrow="FICTIONAL TESTIMONIAL LAYOUT" title="Designed to make social proof easy to scan" description="Sample quotes and profiles created only to demonstrate the visual treatment of a SaaS testimonial section." /><div className="testimonial-grid">{testimonials.map((testimonial) => <figure className="testimonial-card" key={testimonial.name}><span className="sample-label">Sample quote · Fictional person</span><div className="quote-mark">“</div><blockquote>{testimonial.quote}</blockquote><figcaption><span className={`testimonial-avatar ${testimonial.tone}`}>{testimonial.initials}</span><span><strong>{testimonial.name}</strong><small>{testimonial.role}</small></span></figcaption></figure>)}</div></div>
     </section>
   )
 }
@@ -116,22 +115,25 @@ export function Testimonials() {
 export function Pricing() {
   return (
     <section className="section pricing-section" id="pricing">
-      <div className="container"><SectionHeader eyebrow="SIMPLE PRICING" title="Start free. Scale when you're ready." description="All plans include a 14-day Pro trial. No credit card required." /><div className="pricing-grid">{pricing.map((plan) => <article className={`pricing-card ${plan.featured ? 'is-featured' : ''}`} key={plan.name}>{plan.featured && <span className="popular-badge"><Icon name="sparkle" size={13} /> Most Popular</span>}<div className="plan-heading"><h3>{plan.name}</h3><p>{plan.description}</p></div><div className="plan-price"><strong>{plan.price}</strong>{plan.suffix && <span>{plan.suffix}</span>}</div><a className={`button ${plan.featured ? 'button-primary' : 'button-secondary'}`} href="#final-cta">{plan.action} <Icon name="arrowRight" size={16} /></a><div className="plan-divider" /><ul>{plan.features.map((feature) => <li key={feature}><span><Icon name="check" size={14} /></span>{feature}</li>)}</ul></article>)}</div><p className="pricing-note">Need a custom plan for a larger team? <a href="#footer">Talk to our team →</a></p></div>
+      <div className="container"><SectionHeader eyebrow="ILLUSTRATIVE PRICING" title="A clear plan structure for a SaaS concept" description="These sample plans demonstrate pricing-page hierarchy and conversion design. Nothing is available for purchase." /><div className="pricing-grid">{pricing.map((plan) => <article className={`pricing-card ${plan.featured ? 'is-featured' : ''}`} key={plan.name}>{plan.featured && <span className="popular-badge"><Icon name="sparkle" size={13} /> Featured concept</span>}<div className="plan-heading"><h3>{plan.name}</h3><p>{plan.description}</p></div><div className="plan-price"><strong>{plan.price}</strong>{plan.suffix && <span>{plan.suffix}</span>}</div><span className={`button is-static ${plan.featured ? 'button-primary' : 'button-secondary'}`}>Illustrative plan</span><div className="plan-divider" /><ul>{plan.features.map((feature) => <li key={feature}><span><Icon name="check" size={14} /></span>{feature}</li>)}</ul></article>)}</div><p className="pricing-note">Portfolio UI example only · No account, checkout, or subscription flow is connected.</p></div>
     </section>
   )
 }
 
 function AccordionItem({ item, isOpen, onToggle, index }) {
-  return <div className={`faq-item ${isOpen ? 'is-open' : ''}`}><h3><button type="button" aria-expanded={isOpen} aria-controls={`faq-panel-${index}`} onClick={onToggle}><span>{item.question}</span><Icon name="chevronDown" size={19} /></button></h3><div className="faq-answer" id={`faq-panel-${index}`} role="region"><div><p>{item.answer}</p></div></div></div>
+  const buttonId = `faq-button-${index}`
+  const panelId = `faq-panel-${index}`
+
+  return <div className={`faq-item ${isOpen ? 'is-open' : ''}`}><h3><button id={buttonId} type="button" aria-expanded={isOpen} aria-controls={panelId} onClick={onToggle}><span>{item.question}</span><Icon name="chevronDown" size={19} /></button></h3><div className="faq-answer" id={panelId} role="region" aria-labelledby={buttonId} hidden={!isOpen}><div><p>{item.answer}</p></div></div></div>
 }
 
 export function FAQ() {
   const [openIndex, setOpenIndex] = useState(0)
   return (
-    <section className="section faq-section"><div className="container faq-layout"><div className="faq-copy"><span className="eyebrow">FAQ</span><h2>Questions, answered.</h2><p>Everything you need to know before putting your work on autopilot.</p><small>Still have questions? <a href="#footer">Talk to us →</a></small></div><div className="faq-list">{faqs.map((faq, index) => <AccordionItem key={faq.question} item={faq} index={index} isOpen={openIndex === index} onToggle={() => setOpenIndex(openIndex === index ? -1 : index)} />)}</div></div></section>
+    <section className="section faq-section" id="faq"><div className="container faq-layout"><div className="faq-copy"><span className="eyebrow">FAQ</span><h2>Questions, answered.</h2><p>Clear context about what this portfolio concept does—and does not—include.</p></div><div className="faq-list">{faqs.map((faq, index) => <AccordionItem key={faq.question} item={faq} index={index} isOpen={openIndex === index} onToggle={() => setOpenIndex(openIndex === index ? -1 : index)} />)}</div></div></section>
   )
 }
 
 export function FinalCTA() {
-  return <section className="final-cta-section" id="final-cta"><div className="cta-grid-lines" /><div className="container final-cta-content"><span className="cta-icon"><Icon name="sparkle" size={24} /></span><h2>Spend less time organizing work.</h2><p>Let FlowPilot handle the busywork while your team focuses on getting things done.</p><a className="button button-light" href="#pricing">Start your free trial <Icon name="arrowRight" size={18} /></a><small><Icon name="check" size={13} /> No credit card required.</small></div></section>
+  return <section className="final-cta-section" id="final-cta"><div className="cta-grid-lines" /><div className="container final-cta-content"><span className="cta-icon"><Icon name="sparkle" size={24} /></span><h2>A product story designed to feel real.</h2><p>FlowPilot is a self-directed concept demonstrating conversion structure, responsive UI, accessibility, and product mockup design.</p><a className="button button-light" href="#features">Review the product concept <Icon name="arrowRight" size={18} /></a><small><Icon name="check" size={13} /> Fictional product · Frontend-only build</small></div></section>
 }

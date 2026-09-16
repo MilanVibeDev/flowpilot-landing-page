@@ -71,7 +71,7 @@ function MeetingNotesMockup() {
           <div className="panel-title"><span><Icon name="sparkle" size={15} /> Extracted actions</span><small>2 tasks</small></div>
           <div className="extract-task"><span className="task-check" /><span><strong>Finalize launch copy</strong><small><em className="avatar tiny lavender">EC</em> Emma · Thu</small></span></div>
           <div className="extract-task"><span className="task-check" /><span><strong>Review mobile flows</strong><small><em className="avatar tiny blue">DK</em> Daniel · Mon</small></span></div>
-          <button type="button">Add both tasks <Icon name="arrowRight" size={13} /></button>
+          <span className="mockup-button">Add both tasks <Icon name="arrowRight" size={13} /></span>
         </div>
       </div>
     </MockupShell>

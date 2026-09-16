@@ -41,11 +41,8 @@ export default function Navbar() {
             ))}
           </div>
           <div className="nav-actions">
-            <a className="button button-ghost button-small" href="#footer" onClick={closeMenu}>
-              Log in
-            </a>
             <a className="button button-primary button-small" href="#pricing" onClick={closeMenu}>
-              Start Free <Icon name="arrowRight" size={16} />
+              View pricing concept <Icon name="arrowRight" size={16} />
             </a>
           </div>
         </div>
