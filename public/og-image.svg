@@ -1,0 +1,17 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#F8FAFC"/>
+  <circle cx="1040" cy="70" r="330" fill="#EEF2FF"/>
+  <rect x="95" y="93" width="54" height="54" rx="15" fill="#6366F1"/>
+  <path d="M108 112H136L131 122H103L108 112ZM108 129H131L126 139H103L108 129Z" fill="white"/>
+  <text x="168" y="134" fill="#0F172A" font-family="Arial, sans-serif" font-size="43" font-weight="700">FlowPilot</text>
+  <text x="95" y="260" fill="#0F172A" font-family="Arial, sans-serif" font-size="75" font-weight="700">Turn conversations</text>
+  <text x="95" y="345" fill="#0F172A" font-family="Arial, sans-serif" font-size="75" font-weight="700">into action.</text>
+  <text x="95" y="430" fill="#6366F1" font-family="Arial, sans-serif" font-size="75" font-weight="700">Automatically.</text>
+  <text x="99" y="510" fill="#64748B" font-family="Arial, sans-serif" font-size="27">AI project management for small teams.</text>
+  <rect x="789" y="195" width="300" height="260" rx="22" fill="white" stroke="#E2E8F0" stroke-width="3"/>
+  <rect x="824" y="240" width="230" height="55" rx="12" fill="#EEF2FF"/>
+  <rect x="824" y="320" width="230" height="90" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+  <circle cx="853" cy="365" r="12" stroke="#6366F1" stroke-width="3"/>
+  <rect x="881" y="350" width="128" height="10" rx="5" fill="#334155"/>
+  <rect x="881" y="373" width="82" height="8" rx="4" fill="#94A3B8"/>
+</svg>
