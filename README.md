@@ -2,6 +2,8 @@
 
 ### AI project management for small teams
 
+Link: https://flowpilot-landing-page-umber.vercel.app/
+
 FlowPilot is a polished, responsive SaaS landing page for a fictional AI-powered project management platform. The product turns conversations, meeting notes, and ideas into structured tasks so teams can spend less time organizing work and more time completing it.
 
 ![FlowPilot landing page preview](public/og-image.svg)
